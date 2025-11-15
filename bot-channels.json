@@ -1,0 +1,836 @@
+[
+  {
+    "id": "456151123414351874",
+    "name": "┋🔞►chat",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "456198284986286081",
+    "name": "arc-discutii",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "581337273627443222",
+    "name": "┋💌►sugestii",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "655848203446648833",
+    "name": "suport-arcbot",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "699569531487780965",
+    "name": "┋🤪►smilies",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "700024328476950548",
+    "name": "┋►background",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "700434799030042725",
+    "name": "┋⚙►comenzi",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "700551561289400382",
+    "name": "testing",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "702311671527505930",
+    "name": "┋🔔►noutati-website",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "716752358826180619",
+    "name": "╭🛂►chat-echipa",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "730229992163639339",
+    "name": "video",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "731462521285902356",
+    "name": "┋►discutii-privat",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "733768866064498789",
+    "name": "╰🎵►autodj",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "744287715213705250",
+    "name": "┋👮►raport",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "752681981342384238",
+    "name": "┋🏆►level",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "752688123586019489",
+    "name": "╭youtube",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "752700321934868480",
+    "name": "╰🔝►bun-venit",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "755881260219498626",
+    "name": "privat",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "772126655429738498",
+    "name": "╭👁►regulament",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "772126655900286997",
+    "name": "moderator-only",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "773692140530171914",
+    "name": "┋🔔►notificari-discord",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "782674882353299476",
+    "name": "main-owner",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "783473387770216498",
+    "name": "╭🔞►international-chat",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "793276433475960832",
+    "name": "┋🎂►ziua-de-naștere",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "793277279098765322",
+    "name": "more-stuff",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "818054072341889036",
+    "name": "┋🔔►noutati-bot",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "827602652090728459",
+    "name": "┋►🎧dedicatii",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "830582749760716884",
+    "name": "┋🎱►jocuri",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "833087025803952128",
+    "name": "┋►trade-xat",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "842140558868217877",
+    "name": "╰🔝►giff",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "844037896444444672",
+    "name": "test000",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "942537766858805368",
+    "name": "┋►chat-main-owner",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1156693998287716383",
+    "name": "┋📩►ticket",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1156697595092160673",
+    "name": "1-ibau",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1156705980839641089",
+    "name": "2-ibau-ibau",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1156708138381226024",
+    "name": "3-ibau",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1159506886069080134",
+    "name": "4-dia0146",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1173364162437587024",
+    "name": "citiți-asta",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1177341962186141769",
+    "name": "┋🔔►noutati-discord",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1178804175430234136",
+    "name": "┋🔜horoscop",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1179969293014794291",
+    "name": "┋tiktok",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1182080471182610562",
+    "name": "┋🎁►tragem-la-sorți🆓",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1219740843569582231",
+    "name": "verifică-dacă-ești-om",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1226245139240976424",
+    "name": "┋🟢►evenimente",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1228830107519680583",
+    "name": "5-djpio",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1228837726183358583",
+    "name": "7-djpio",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1228838666131214336",
+    "name": "8-ibau",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1228843069458219048",
+    "name": "9-djpio",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1236584198303907890",
+    "name": "tiktok",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1296573544091881544",
+    "name": "╭🛂►tiktok-echipa",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1325995800144384000",
+    "name": "┋🎱►magazin",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1327976796271939584",
+    "name": "dice",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1327976971480727643",
+    "name": "guess",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1327977310200139860",
+    "name": "rps",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "1418080318040309791",
+    "name": "10-ibau-maria_40420",
+    "guildId": "456151122957303809",
+    "guildName": "Radio Bau"
+  },
+  {
+    "id": "483005280662323204",
+    "name": "💬xat_family",
+    "guildId": "483005280662323200",
+    "guildName": "XAT Family"
+  },
+  {
+    "id": "649350992323936256",
+    "name": "💌stuff-arcbots",
+    "guildId": "483005280662323200",
+    "guildName": "XAT Family"
+  },
+  {
+    "id": "713487146060742667",
+    "name": "assistance",
+    "guildId": "483005280662323200",
+    "guildName": "XAT Family"
+  },
+  {
+    "id": "740331335066976266",
+    "name": "testing-stuff",
+    "guildId": "483005280662323200",
+    "guildName": "XAT Family"
+  },
+  {
+    "id": "628684608610762774",
+    "name": "💬chat",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "628703382550609937",
+    "name": "☹selfie",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "637576506700202014",
+    "name": "🤪smilies",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "637576714725097472",
+    "name": "🛂chat-echipa",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "640318049710243860",
+    "name": "🎥image",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "641015832352391184",
+    "name": "⚙comenzi",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "645355279680274433",
+    "name": "🔞bad-words🤬",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "645360420835819521",
+    "name": "🎤dj-ay",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "658757795558064154",
+    "name": "📺youtube",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "659346362323959808",
+    "name": "💌sugestii",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "659925313286963224",
+    "name": "🔧_🔨tutorial",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "660284578656681995",
+    "name": "🎧music🎵🎶",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "662749342754537478",
+    "name": "👮raport",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "706341902613741589",
+    "name": "🔔noutati📢",
+    "guildId": "628684608610762772",
+    "guildName": "Ajutor"
+  },
+  {
+    "id": "783463972892180536",
+    "name": "moderator-only",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463972892180537",
+    "name": "privat",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463972892180538",
+    "name": "regulament",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463972892180539",
+    "name": "🔔noutati-website",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965185",
+    "name": "🔞chat",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965186",
+    "name": "autodj",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965187",
+    "name": "comenzi-raspunsuri",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965188",
+    "name": "👮raport",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965189",
+    "name": "rank",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965190",
+    "name": "bun-venit",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965192",
+    "name": "youtube",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973151965193",
+    "name": "twitter",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841611",
+    "name": "echipa",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841612",
+    "name": "💌sugestii",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841613",
+    "name": "🤪smilies",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841614",
+    "name": "video",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841615",
+    "name": "discutii-privat",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841616",
+    "name": "main-owner",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841618",
+    "name": "background",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973394841619",
+    "name": "arc-discutii",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973693554718",
+    "name": "suport-arcbot",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "783463973693554719",
+    "name": "testing",
+    "guildId": "783463972585472001",
+    "guildName": "Radio Bau Official"
+  },
+  {
+    "id": "851104069166301185",
+    "name": "╭💬►chat",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069166301186",
+    "name": "┋⛓►tutorial",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069166301187",
+    "name": "╰😃►smilies",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069166301188",
+    "name": "╰📸►selfie",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069166301189",
+    "name": "┋📢►știri",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069166301191",
+    "name": "┋💪►chat-echipa",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069166301192",
+    "name": "╰💁►sugestii",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069166301193",
+    "name": "┋👮►raport",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069459378186",
+    "name": "┋⚙►comenzi",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069459378187",
+    "name": "╰🔞►cuvinte-nepotrivite",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069459378189",
+    "name": "🎤dj-ay",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069459378190",
+    "name": "🎧music🎵🎶",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069459378191",
+    "name": "┋🎦►youtube",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851104069459378194",
+    "name": "🎥image",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851121463394304041",
+    "name": "╭👁►regulament",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "851170642803556352",
+    "name": "┋🎮►jocuri",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "852569737539878932",
+    "name": "moderator-only",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "859563855771074560",
+    "name": "test-xatchat",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "872618302046879784",
+    "name": "┋👀►momente-amuzante",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "884162986980298862",
+    "name": "┋📌►twitter",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "890341632719880213",
+    "name": "╭👮►suport-chat",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "902295381474426931",
+    "name": "╭💪►adunare-echipa",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "929834471023321208",
+    "name": "┋💪►echipa-privat",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "938239372929687593",
+    "name": "┋👑►vip-chat",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "938612169694654534",
+    "name": "┋🏆►creșterea-nivelului🥇🥈🥉",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "938650140053504040",
+    "name": "┋🎁►tragem-la-sorți🆓",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "939245015803248650",
+    "name": "adunare",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "940206774689091624",
+    "name": "┋🔞►chat-en",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "940356897985429604",
+    "name": "┋💪►powers",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "950475074652233790",
+    "name": "┋👮►raport-website",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "990670552026992640",
+    "name": "┋🔞►imagini",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "992103725340577913",
+    "name": "┋📌►arcbots-suport",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "998187940180135946",
+    "name": "»-magazin",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "1000698169509826610",
+    "name": "┋💪►chat-owner",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "1010619336672673792",
+    "name": "┋📌►bingo",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "1013050654341726218",
+    "name": "┋🎧►quiz-music",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "1016483033186062448",
+    "name": "┋🎁►săptămânal🆓",
+    "guildId": "851104068935876608",
+    "guildName": "Comerț"
+  },
+  {
+    "id": "1411492527445512296",
+    "name": "general",
+    "guildId": "1411492525763592276",
+    "guildName": "Radio Fun Party"
+  },
+  {
+    "id": "1411492527445512297",
+    "name": "games",
+    "guildId": "1411492525763592276",
+    "guildName": "Radio Fun Party"
+  },
+  {
+    "id": "1411492527445512298",
+    "name": "music",
+    "guildId": "1411492525763592276",
+    "guildName": "Radio Fun Party"
+  },
+  {
+    "id": "1411495721466855494",
+    "name": "all-members-22",
+    "guildId": "1411492525763592276",
+    "guildName": "Radio Fun Party"
+  },
+  {
+    "id": "1411495724880887819",
+    "name": "members-17",
+    "guildId": "1411492525763592276",
+    "guildName": "Radio Fun Party"
+  },
+  {
+    "id": "1411495728206975078",
+    "name": "bots-5",
+    "guildId": "1411492525763592276",
+    "guildName": "Radio Fun Party"
+  },
+  {
+    "id": "1412081717048643747",
+    "name": "linkuri",
+    "guildId": "1411492525763592276",
+    "guildName": "Radio Fun Party"
+  }
+]

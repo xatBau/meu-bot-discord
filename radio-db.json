@@ -1,0 +1,34 @@
+{
+  "commands": [
+    {
+      "name": "ping",
+      "reply": "Pong!"
+    },
+    {
+      "name": "radio",
+      "reply": "🎶 Tocando Rádio Bau!"
+    },
+    {
+      "name": "hi",
+      "reply": "hiii"
+    }
+  ],
+  "autoReplies": [
+    {
+      "trigger": "olá",
+      "reply": "Olá! 👋 Tudo bem?"
+    },
+    {
+      "trigger": "hi",
+      "reply": "heyyy"
+    },
+    {
+      "trigger": "tu",
+      "reply": "eu????"
+    }
+  ],
+  "status": {
+    "text": "Rádio Bau online!",
+    "type": "PLAYING"
+  }
+}

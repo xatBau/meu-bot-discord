@@ -1,0 +1,24 @@
+/* public/style.css */
+:root{
+  --bg:#0f0f10; --panel:#141416; --accent:#74d0ff; --muted:#9aa0a6;
+  --btn:#7bd1ff;
+  color:#eee; font-family: Inter, system-ui, Arial;
+}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial, Helvetica, sans-serif}
+.container{display:flex;min-height:100vh}
+.sidebar{width:220px;background:#0b0b0b;padding:20px;border-right:1px solid rgba(255,255,255,0.03)}
+.profile{display:flex;flex-direction:column;align-items:center;margin-bottom:20px}
+.avatar{width:86px;height:86px;border-radius:50%;background:#222;margin-bottom:8px;box-shadow:0 0 12px rgba(0,0,0,0.5)}
+.name{color:#6dd0ff;font-weight:700}
+.menu{display:flex;flex-direction:column;gap:8px}
+.menu .tab{background:transparent;border:none;color:#ddd;padding:12px;text-align:left;border-radius:8px;cursor:pointer}
+.menu .tab.active{background:#111827;color:var(--btn);box-shadow:0 6px 12px rgba(0,0,0,0.4)}
+#content{flex:1;padding:28px}
+.panel{display:none;background:var(--panel);padding:18px;border-radius:8px;margin-bottom:18px}
+.panel.active{display:block}
+input,textarea,select{width:100%;padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:#0b0b0b;color:#ddd;margin-bottom:10px}
+textarea{min-height:120px}
+.buttons{display:flex;gap:10px;margin:12px 0}
+button{background:var(--btn);border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+.preview{background:#0b0b0b;padding:10px;border-radius:6px;color:#ddd}
+.channelItem, .historyItem{padding:8px;border-bottom:1px solid rgba(255,255,255,0.03);color:#ddd}

@@ -1,140 +1,128 @@
-require('dotenv').config();
-const fs = require('fs');
-const path = require('path');
-const { Client, Collection, GatewayIntentBits } = require('discord.js');
+// @ts-nocheck
+require("dotenv").config();
+const { Client, GatewayIntentBits } = require("discord.js");
+const { Player } = require("discord-player");
+const OpenAI = require("openai");
 
-// === Corrige erro do dirname (caso Node 22+ esteja rodando como módulo) ===
-if (typeof dirname === 'undefined') {
-  global.dirname = path.resolve();
-}
-// ==========================================================================
-
+// === Configurações do Discord ===
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent
-  ]
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildVoiceStates,
+  ],
 });
 
-//  Inicializar os comandos
-client.commands = new Map();
+// === Player de música ===
+const player = new Player(client);
 
-// Carrega comandos
-const commandsPath = path.join(dirname, 'commands');
-const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
-for (const file of commandFiles) {
-  const command = require(`./commands/${file}`);
-  client.commands.set(command.data.name, command);
-}
-
-// Carrega eventos
-const eventsPath = path.join(__dirname, 'events');
-const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
-for (const file of eventFiles) {
-  const event = require(`./events/${file}`);
-  if (event.once) {
-    client.once(event.name, (...args) => event.execute(...args, client));
-  } else {
-    client.on(event.name, (...args) => event.execute(...args, client));
-  }
-}
-
-// Interações (Slash Commands)
-client.on('interactionCreate', async interaction => {
-  if (!interaction.isChatInputCommand()) return;
-
-  const command = client.commands.get(interaction.commandName);
-  if (!command) return;
-
-  try {
-    await command.execute(interaction);
-  } catch (error) {
-    console.error(error);
-    await interaction.reply({ content: ' Erro ao executar o comando!', ephemeral: true });
-  }
-});
-
-// Responder mensagens comuns
-client.on('messageCreate', (message) => {
-    // Ignorar mensagens do próprio bot
-    if (message.author.bot) return;
-
-    // Respostas automáticas simples
-    if (message.content.toLowerCase() === 'oi') {
-        message.reply('Olá!  Tudo bem com você?');
-    }
-
-    if (message.content.toLowerCase().includes('como vai')) {
-        message.reply('Eu tô ótimo!  E você?');
-    }
-
-    if (message.content.toLowerCase().includes('bot')) {
-        message.reply('Oi! Eu sou seu bot fiel ');
-    }
-});
-
-const OpenAI = require("openai");
+// === Configuração da OpenAI (já existente) ===
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_KEY
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
-// Quando alguém enviar uma mensagem
-client.on('messageCreate', async (message) => {
-  if (message.author.bot) return; // Ignora bots
+client.once("ready", () => {
+  console.log(`🤖 Bot online como ${client.user.tag}`);
+});
 
-  const pergunta = message.content;
+// === Sistema de comandos ===
+client.on("messageCreate", async (message) => {
+  if (message.author.bot) return;
 
-  // Só responder se for mencionado ou começar com o nome do bot
-  if (message.mentions.has(client.user) || pergunta.toLowerCase().startsWith("bot")) {
-    await message.channel.sendTyping();
+  const prefix = "!";
+  if (!message.content.startsWith(prefix)) return;
+
+  const args = message.content.slice(prefix.length).trim().split(/ +/);
+  const command = args.shift().toLowerCase();
+
+  // === Comando !ajuda ===
+  if (command === "ajuda") {
+    const ajudaMsg = `
+🎵 **Comandos do Radio Bau**
+\`!play <nome ou link>\` → Tocar música
+\`!pause\` → Pausar
+\`!resume\` → Retomar
+\`!skip\` → Pular
+\`!stop\` → Parar
+ \`!ask <mensagem>\` → Falar com a IA
+ \`!ajuda\` → Mostrar esta lista
+    `;
+    await message.reply(ajudaMsg);
+    return;
+  }
+
+  // === Comando !play ===
+  if (command === "play") {
+    const query = args.join(" ");
+    if (!query) return message.reply("❗ Diga o nome ou link da música, ex: `!play Imagine Dragons`");
+
+    const channel = message.member?.voice.channel;
+    if (!channel) return message.reply("🎧 Entre em um canal de voz primeiro!");
+
+    try {
+      const result = await player.play(channel, query, {
+        nodeOptions: { metadata: message },
+      });
+      message.reply(` Tocando agora: **${result.track.title}**`);
+    } catch (e) {
+      console.error(e);
+      message.reply("❌ Não consegui tocar essa música.");
+    }
+    return;
+  }
+
+  // === Comando !pause ===
+  if (command === "pause") {
+    const queue = player.nodes.get(message.guild.id);
+    if (!queue || !queue.node.isPlaying()) return message.reply("⏸️ Nenhuma música tocando.");
+    queue.node.pause();
+    return message.reply("⏸️ Música pausada.");
+  }
+
+  // === Comando !resume ===
+  if (command === "resume") {
+    const queue = player.nodes.get(message.guild.id);
+    if (!queue || queue.node.isPlaying()) return message.reply("▶️ Nenhuma música pausada.");
+    queue.node.resume();
+    return message.reply("▶️ Música retomada!");
+  }
+
+  // === Comando !skip ===
+  if (command === "skip") {
+    const queue = player.nodes.get(message.guild.id);
+    if (!queue) return message.reply("⏭️ Nenhuma música na fila.");
+    queue.node.skip();
+    return message.reply("⏭️ Música pulada!");
+  }
+
+  // === Comando !stop ===
+  if (command === "stop") {
+    const queue = player.nodes.get(message.guild.id);
+    if (!queue) return message.reply("🛑 Nenhuma música tocando.");
+    queue.delete();
+    return message.reply("🛑 Reprodução parada e fila limpa!");
+  }
+
+  // === Comando !ask (IA) ===
+  if (command === "ask") {
+    const pergunta = args.join(" ");
+    if (!pergunta) return message.reply("❗ Escreva algo depois de `!ask`, ex: `!ask Olá!`");
 
     try {
       const resposta = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: pergunta }]
+        messages: [{ role: "user", content: pergunta }],
       });
 
-      const texto = resposta.choices[0].message.content;
-      message.reply(texto);
-    } catch (err) {
-      console.error(err);
-      message.reply(" Ocorreu um erro ao tentar responder.");
+      const respostaTexto = resposta.choices[0].message.content;
+      await message.reply(respostaTexto);
+    } catch (error) {
+      console.error("Erro ao gerar resposta:", error.message);
+      await message.reply(" Ocorreu um erro ao tentar responder.");
     }
   }
 });
 
-
-// Carregar respostas do arquivo JSON
-let respostas = JSON.parse(fs.readFileSync('./respostas.json', 'utf8'));
-
-client.on('messageCreate', (message) => {
-  if (message.author.bot) return;
-
-  const msg = message.content.toLowerCase();
-
-  // Verifica se alguma chave do JSON está contida na mensagem
-  for (const chave in respostas) {
-    if (msg.includes(chave.toLowerCase())) {
-      message.reply(respostas[chave]);
-      break; // evita mandar várias respostas de uma vez
-    }
-  }
-});
-
-
-client.once('ready', () => {
-  console.log(`✅ Bot online como ${client.user.tag}`);
-
-  // ID do canal onde a mensagem será enviada
-  const channelId = '773692140530171914'; // substitui pelo ID do canal
-
-  const channel = client.channels.cache.get(channelId);
-  if (channel) {
-    channel.send(' Bot reiniciado e está online novamente!');
-  } else {
-    console.log(' Canal não encontrado. Verifique o ID.');
-  }
-});
-
+// === Login do bot ===
 client.login(process.env.TOKEN);

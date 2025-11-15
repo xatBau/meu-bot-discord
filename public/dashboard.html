@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Painel Completo - Meu Bot</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar"></div>
+        <div class="name">ibau</div>
+      </div>
+      <nav class="menu">
+        <button data-tab="anuncios" class="tab active">Anúncios</button>
+        <button data-tab="respostas" class="tab">Respostas</button>
+        <button data-tab="status" class="tab">Status</button>
+        <button data-tab="historico" class="tab">Histórico</button>
+        <button data-tab="controles" class="tab">Controles</button>
+        <button data-tab="canais" class="tab">Canais</button>
+      </nav>
+    </aside>
+
+    <section id="content">
+      <!-- Anúncios -->
+      <div id="anuncios" class="panel active">
+        <h2>Criar / Salvar Anúncio</h2>
+        <label>Título</label>
+        <input id="title" type="text" placeholder="Título do anúncio (opcional)" />
+        <label>Mensagem</label>
+        <textarea id="message" placeholder="Texto do anúncio..."></textarea>
+        <label>Canal</label>
+        <select id="channelSelect"><option value="">(selecione)</option></select>
+        <label>Delay (s)</label>
+        <input id="delay" type="number" value="0" min="0" />
+        <div class="buttons">
+          <button id="saveBtn">Salvar Anúncio</button>
+          <button id="sendNowBtn">Enviar Agora (salva e tenta enviar)</button>
+        </div>
+
+        <h3>Pré-visualização</h3>
+        <div id="preview" class="preview">(sem título)<br>(sem conteúdo)</div>
+      </div>
+
+      <!-- Respostas (placeholder) -->
+      <div id="respostas" class="panel">
+        <h2>Respostas Automáticas</h2>
+        <div id="respostasList">Nenhuma resposta configurada.</div>
+      </div>
+
+      <!-- Status -->
+      <div id="status" class="panel">
+        <h2>Status do Bot</h2>
+        <div id="botstatus">Carregando status...</div>
+        <button id="refreshStatus">Atualizar</button>
+      </div>
+
+      <!-- Histórico -->
+      <div id="historico" class="panel">
+        <h2>Histórico de Anúncios Enviados</h2>
+        <div id="historyList">Carregando histórico...</div>
+      </div>
+
+      <!-- Controles -->
+      <div id="controles" class="panel">
+        <h2>Controles</h2>
+        <p>Ações rápidas:</p>
+        <button id="reloadChannels">Recarregar canais (server)</button>
+        <div id="controlResult"></div>
+      </div>
+
+      <!-- Canais -->
+      <div id="canais" class="panel">
+        <h2>Canais conhecidos</h2>
+        <div id="channelsList">Carregando canais...</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>
